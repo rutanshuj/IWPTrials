@@ -1,0 +1,47 @@
+/*Element Selector*/
+
+body{
+	background-color: chocolate; 
+}
+
+h2{
+	font-size: 40px;
+	color: lightblue;
+}
+img{
+	horizontal-align: middle;
+}
+input[type="text"] ,[type="number"]{
+	width: 400px;
+	color:blue;
+}
+/*Pseudo Class */
+input:hover{
+	border: 1px solid black;
+}
+
+/*This is Child attribute selector */
+ul>li{
+	font-weight: bold;
+	color: navy;
+}
+
+/*Descendent Selector */
+ol li{
+	font-family: Arial, Helvetica,sans-serif;
+}
+
+/*Class Selector*/
+.center{
+	text-align: center;
+}
+
+/*ID Selector*/
+#form1{
+	text-align: center;
+}
+
+/*Universal Selector */
+*{
+	font-weight: bold;
+}

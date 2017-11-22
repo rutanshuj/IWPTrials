@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type ="text/javascript">
+user_date = new Date();
+
+var myVar = setTimeout(function() {
+		myTimer();
+	}, 1000);
+function myTimer(){
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toLocaleString();
+}
+</script>
+<title>
+Date Operations
+</title>
+</head>
+<body>
+<div id = "demo"> </div> </br>
+<button onclick="clearTimeout(myVar)">Stop time</button>
+</body>
+</html>

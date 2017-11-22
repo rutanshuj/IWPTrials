@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+img{
+	width: 100px;
+	height: 100px;
+	background: red;
+	position: relative;
+	animation-name: run;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-delay: 2s;
+	animation-timing-function: ease-out;
+}
+
+@keyframes run{
+	0% {left:0px; top: 0px;}
+	25% {left: 300px; top: 0px;}
+	50%{ left: 300px; top: 0px;
+	-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";}
+	75% {
+		left: 0px; top: 0px;
+	}
+}
+</style>
+</head>
+<body>
+<h2> This is an iframe description page for Pikachu </h2>
+<img src="pik2.jpg"></p>
+
+<canvas id= "myCanvas" width = "200px" height= "200px" style="background: white; border: 1px solid black;"> </canvas>
+</body>
+</html>

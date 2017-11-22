@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> Javascript Playground </title>
+<script type="text/javascript">
+function changeText(){
+	document.getElementById("test1").innerHTML = "Hello World";
+	console.log(history.length);
+}
+function javacheck(){
+	var x = "Java Enabled: " + navigator.language;
+	document.getElementById("test2").innerHTML = x;
+}
+function screencheck(){
+	var y = "Width: " + screen.width +"</br>" + 
+	" Available Width: " + screen.availWidth + "</br>" +
+	"Color Depth: " + screen.colorDepth + "</br>" +
+	"Screen Pixel Depth: " + screen.pixelDepth;
+	document.getElementById("test3").innerHTML = y;
+}
+
+
+</script>
+</head>
+<body>
+<h1> Javascript Playground </h1>
+<div id = "test1">Change this text after pressing button</div>
+<button id="button1" onclick="changeText()"> Press this </button> </br>
+
+<h4> Check whether your browser is java enabled </h4>
+<div id = "test2"> Java enabled: ? </div></br>
+<button id = "button2" onclick="javacheck()"> Check </button></br> 
+
+
+<h4> Check whether your screen details </h4>
+<div id = "test3"> </div></br>
+<button id = "button2" onclick="screencheck()"> Check </button></br> 
+
+<h4> Playing with Nodes </h4>
+<div id = "div1">
+<p id = "p1"> This is a paragraph </p>
+<p id ="p2"> This is another paragraph </p>
+</div>
+</body>
+<script type="text/javascript">
+var para = document.createElement("p");
+var node = document.createTextNode("This is new");
+para.appendChild(node);
+
+var para2 = document.createElement("p2");
+var node1 = document.createTextNode("This is the first paragraph inserted by JS");
+para2.appendChild(node1);
+
+var para3 = document.createElement("p3");
+var node2 = document.createTextNode("I am going to delete this");
+
+para3.appendChild(node2);
+
+var element = document.getElementById("div1");
+var text = document.getElementById("p1");
+element.insertBefore(para2, text);
+element.appendChild(para);
+element.appendChild(para3);
+element.removeChild(para3);
+
+</script>
+</html>
