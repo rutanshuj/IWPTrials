@@ -58,9 +58,10 @@
 
 </div>
 </form>
-<a href = "stringwrapper.html"> String Operations </a></br>
-<a href = "date.html" target="_blank"> Date Operations </a></br>
-<a href = "jplay.html" target="_blank"> JavaScript Playground </a>
+<div>
+<?php require("menu.php"); ?>
+</div>
+
 </body>
 <script>
 function validateForm(){	
